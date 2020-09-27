@@ -1,0 +1,21 @@
+.alert {
+  color: #fff;
+  padding: 1rem;
+  border-radius: 2px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.alert.error {
+  background-color: #f44336;
+}
+
+.alert.success {
+  background-color: #46a049;
+}
+
+.alert > i {
+  cursor: pointer;
+}

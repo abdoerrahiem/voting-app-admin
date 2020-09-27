@@ -1,0 +1,112 @@
+.voteTable {
+  margin: 1rem;
+}
+
+.voteTable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.voteTable th,
+.voteTable td {
+  border: 1px solid #ddd;
+}
+
+.voteTable table th {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 1rem;
+}
+
+.voteTable table td {
+  padding: 1rem;
+}
+
+.voteTable table td:first-child {
+  text-align: center;
+}
+
+.voteTable table td:last-child {
+  color: red;
+  text-align: center;
+  cursor: pointer;
+}
+
+.voteTable .delete-button {
+  background-color: red;
+  border: none;
+  color: #fff;
+  padding: 1rem;
+  font-family: 'Kumbh Sans', sans-serif;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  outline: none;
+  margin-bottom: 1rem;
+  border-radius: 1.5rem;
+}
+
+.voteTable .delete-button:hover {
+  opacity: 0.8;
+}
+
+.voteTable .delete-button i {
+  margin-right: 0.5rem;
+}
+
+.voteTable__confirm-modal {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.voteTable__confirm-modal--content {
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.voteTable__confirm-modal--content p {
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.voteTable__confirm-modal--content button {
+  width: 5rem;
+  margin-right: 0.5rem;
+  padding: 5px 0;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 1rem;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.voteTable__confirm-modal--content button:first-child {
+  background: green;
+}
+
+.voteTable__confirm-modal--content button:last-child {
+  background: red;
+}
+
+.voteTable__confirm-modal--content > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,12 @@
+.footer {
+  background-color: #26a5ff;
+  text-align: center;
+  padding: 0.5rem 0;
+  position: fixed;
+  bottom: 0;
+  min-width: 100vw;
+}
+
+.footer small {
+  color: rgb(213, 204, 204);
+}

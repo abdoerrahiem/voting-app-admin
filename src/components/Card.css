@@ -1,0 +1,30 @@
+.card {
+  width: 15rem;
+  height: 15rem;
+  background: red;
+  margin: 1rem;
+  padding: 1rem;
+  color: #fff;
+}
+
+.card > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.card i {
+  font-size: 5rem;
+  color: gray;
+}
+
+.card h1 {
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+.card p {
+  font-weight: bold;
+  text-align: center;
+}

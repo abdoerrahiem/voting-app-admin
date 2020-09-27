@@ -1,0 +1,88 @@
+.addNominee {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addNominee form {
+  background: #fff;
+  width: 40rem;
+  padding: 2.5rem 1rem 1rem 1rem;
+}
+
+.addNominee h3 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.addNominee form > h3 {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+}
+
+.addNominee input,
+.addNominee select,
+.addNominee textarea,
+.addNominee button {
+  outline: none;
+  font-family: 'Kumbh Sans', sans-serif;
+  padding: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  border: 1px solid #ddd;
+}
+
+.addNominee form > div:last-child {
+  text-align: right;
+}
+
+.addNominee form > div:last-child button {
+  border: none;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  color: #fff;
+  width: 5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.addNominee form > div:last-child button:hover {
+  opacity: 0.7;
+}
+
+.addNominee form > div:last-child button:first-child {
+  background: green;
+}
+
+.addNominee form > div:last-child button:nth-child(2) {
+  background: red;
+}
+
+.addNominee__form {
+  display: flex;
+  align-items: center;
+}
+
+.addNominee__form h3 {
+  font-size: 1rem;
+}
+
+.addNominee__form--left {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.addNominee__form--right {
+  flex: 1;
+  padding: 0 1rem;
+}

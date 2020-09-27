@@ -1,0 +1,10 @@
+.table__nominee td:nth-child(2),
+.table__nominee td:nth-child(3) {
+  text-align: center;
+}
+
+.table__nominee td:nth-child(2) p,
+.table__nominee td:nth-child(3) p {
+  font-weight: bold;
+  margin-top: 1rem;
+}

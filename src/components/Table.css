@@ -1,0 +1,76 @@
+.table {
+  margin: 0 auto;
+  font-family: 'Kumbh Sans', sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table,
+.table td {
+  border: 1px solid #ddd;
+}
+
+.table td {
+  padding: 1rem;
+}
+
+.table tr:first-child td {
+  text-align: center;
+  font-weight: bold;
+}
+
+.table tr td:first-child {
+  text-align: center;
+}
+
+.table .icons {
+  text-align: center;
+}
+
+.table .icons i {
+  margin-right: 1rem;
+}
+
+.table .icons i:first-child {
+  color: green;
+  cursor: pointer;
+}
+
+.table .icons i:nth-child(2) {
+  color: red;
+  cursor: pointer;
+}
+
+.table .center {
+  text-align: center;
+}
+
+.table img {
+  height: 7.5rem;
+  width: 7.5rem;
+  border-radius: 100%;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.btn {
+  border: 1px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 5px;
+  border-radius: 1rem;
+  font-size: 0.6rem;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.upload-btn-wrapper input[type='file'] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}

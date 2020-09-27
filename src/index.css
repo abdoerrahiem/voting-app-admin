@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: 'Kumbh Sans', sans-serif;
+  /* font-size: 62.5%; */
+}
+
+.voting {
+  display: flex;
+  min-height: 100vh;
+}
+
+.voting__left {
+  background: #343536;
+  display: flex;
+  flex-direction: column;
+  border-right: 0.5px solid #fff;
+  min-width: 15rem;
+}
+
+.voting__left img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+}
+
+.voting__left > div:first-child {
+  background-color: #26a5ff;
+  padding: 1rem 0;
+  position: fixed;
+  min-width: 15rem;
+}
+
+.voting__left > div:first-child a {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.voting__left > div:first-child a:hover {
+  opacity: 0.9;
+}
+
+.voting__left .adminData {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.4rem 0;
+  margin-top: 3.5rem;
+  position: fixed;
+  width: 14.9rem;
+}
+
+.voting__left .adminData:hover {
+  background-color: #595d61;
+}
+
+.voting__left .adminData p {
+  margin-bottom: 0.5rem;
+}
+
+.voting__left .adminData p:first-child {
+  font-weight: bold;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.voting__left .adminData div:first-child {
+  margin-right: 1rem;
+}
+
+.voting__left .adminData i {
+  color: green;
+  font-size: 0.5rem;
+}
+
+.voting__left .links {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 35%;
+  width: 14.9rem;
+}
+
+.voting__left .links a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+  padding: 1.5rem 0 1.5rem 1.5rem;
+}
+
+.voting__left .links i {
+  margin-right: 0.5rem;
+}
+
+.voting__left .links a.current {
+  background-color: #595d61;
+  border-left: 3px solid #26a5ff;
+}
+
+.voting__left .links a:hover {
+  background-color: #595d61;
+  border-left: 3px solid #26a5ff;
+}
+
+.voting__right {
+  background: #f0f2f5;
+  width: 100%;
+}
+
+.btn-modal {
+  border: none;
+  color: #fff;
+  background: #26a5ff;
+  padding: 0.7rem 2.5rem;
+  margin-left: 1rem;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  border-radius: 2rem;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.btn-modal:hover {
+  opacity: 0.8;
+}

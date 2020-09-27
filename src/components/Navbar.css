@@ -1,0 +1,36 @@
+.navbar {
+  background: #26a5ff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem;
+  position: fixed;
+  min-width: 100vw;
+}
+
+.navbar div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding-right: 15rem;
+}
+
+.navbar div:nth-child(2) p {
+  margin-right: 2rem;
+  font-weight: bold;
+}
+
+.navbar div:nth-child(2) a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar div:nth-child(2) a:hover {
+  opacity: 0.8;
+}
+
+.navbar i {
+  cursor: pointer;
+}

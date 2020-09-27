@@ -1,0 +1,24 @@
+.votes {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.votes h3 {
+  margin: 1rem 0 1rem 1rem;
+}
+
+.votes h5 {
+  margin: 2rem 0 1rem 1rem;
+}
+
+.votes h4 {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 5rem;
+}
+
+.votes__table {
+  padding: 1rem;
+}
