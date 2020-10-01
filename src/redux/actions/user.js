@@ -1,6 +1,6 @@
 import * as types from '../types'
 import axios from 'axios'
-import { config, removeAlert, api } from '../../utils'
+import { config, removeAlert, api, setAuthToken } from '../../utils'
 
 // Login
 export const login = (username, password) => async (dispatch) => {
@@ -8,6 +8,7 @@ export const login = (username, password) => async (dispatch) => {
   try {
     const res = await axios.post(`${api}/users/loginAdmin`, body, config)
     dispatch({ type: types.LOGIN, payload: res.data })
+    dispatch(getCurrentUser())
   } catch (error) {
     dispatch({ type: types.LOGIN_ERROR, payload: error.response.data })
     removeAlert(dispatch)
@@ -16,6 +17,10 @@ export const login = (username, password) => async (dispatch) => {
 
 // Current user
 export const getCurrentUser = () => async (dispatch) => {
+  if (localStorage.getItem('x-auth-token')) {
+    setAuthToken(localStorage.getItem('x-auth-token'))
+  }
+
   try {
     const res = await axios.get(`${api}/users/me`)
     dispatch({ type: types.GET_CURRENT_USER, payload: res.data })

@@ -1,6 +1,7 @@
 import * as types from '../types'
 
 const initialState = {
+  token: localStorage.getItem('x-auth-token') || null,
   adminData: null,
   isAdmin: false,
   loading: true,
@@ -21,6 +22,8 @@ export default (state = initialState, action) => {
     case types.USER_LOGOUT:
       localStorage.removeItem('x-auth-token')
       return {
+        token: null,
+        adminData: null,
         isAdmin: false,
         loading: false,
         error: null,
