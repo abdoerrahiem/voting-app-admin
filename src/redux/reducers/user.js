@@ -88,7 +88,7 @@ export default (state = initialState, action) => {
       return {
         isAdmin: false,
         loading: false,
-        error: payload,
+        error: payload.message,
       }
     case types.GET_CURRENT_USER_ERROR:
     case types.GET_USERS_ERROR:
