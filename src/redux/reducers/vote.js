@@ -23,12 +23,16 @@ export default (state = {}, action) => {
         successMessage: payload.message,
       }
     case types.ADD_VOTE_ERROR:
-    case types.GET_VOTES_ERROR:
     case types.DELETE_VOTE_ERROR:
     case types.DELETE_VOTES_ERROR:
       return {
         ...state,
         errorMessage: payload.message,
+      }
+    case types.GET_VOTES_ERROR:
+      return {
+        ...state,
+        errorMessage: payload,
       }
     default:
       return state

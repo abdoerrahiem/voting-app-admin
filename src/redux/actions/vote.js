@@ -16,7 +16,8 @@ export const getVotes = () => async (dispatch) => {
     const res = await axios.get(`${api}/votes`)
     dispatch({ type: types.GET_VOTES, payload: res.data })
   } catch (error) {
-    dispatch({ type: types.GET_VOTES_ERROR, payload: error.response.data })
+    dispatch({ type: types.GET_VOTES_ERROR, payload: error.response })
+    console.log(error.response)
   }
 }
 
