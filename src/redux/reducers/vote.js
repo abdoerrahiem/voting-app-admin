@@ -16,8 +16,14 @@ export default (state = {}, action) => {
         countVotes: payload.count,
         voteLists: payload.data,
       }
+    case types.CREATE_PDF:
+      return {
+        ...state,
+        success: true,
+      }
     case types.DELETE_VOTE:
     case types.DELETE_VOTES:
+    case types.CREATE_PDF_ERROR:
       return {
         ...state,
         successMessage: payload.message,

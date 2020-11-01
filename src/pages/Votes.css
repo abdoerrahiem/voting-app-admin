@@ -22,3 +22,18 @@
 .votes__table {
   padding: 1rem;
 }
+
+.votes button {
+  border: none;
+  background-color: teal;
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
+  padding: 7px 20px;
+  margin-left: 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.votes button:hover {
+  transform: scale(0.98);
+}

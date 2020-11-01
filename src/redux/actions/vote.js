@@ -42,3 +42,13 @@ export const deleteVotes = () => async (dispatch) => {
     removeAlert(dispatch)
   }
 }
+
+export const createPdf = () => async (dispatch) => {
+  try {
+    const res = await axios.post(`${api}/votes/createpdf`)
+    dispatch({ type: types.CREATE_PDF, payload: res.data })
+  } catch (error) {
+    dispatch({ type: types.CREATE_PDF_ERROR, payload: error.response.data })
+    removeAlert(dispatch)
+  }
+}
