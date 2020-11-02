@@ -14,8 +14,6 @@ const Login = ({ login, userReducer }) => {
   const handleSubmit = (e) => {
     e.preventDefault()
     login(username, password)
-    setUsername('')
-    setPassword('')
   }
 
   if (isAdmin) return <Redirect to='/' />
@@ -32,6 +30,7 @@ const Login = ({ login, userReducer }) => {
             placeholder='Username'
             value={username}
             onChange={(e) => setUsername(e.target.value)}
+            required
           />
         </div>
         <div>
@@ -41,6 +40,7 @@ const Login = ({ login, userReducer }) => {
             placeholder='Password'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            required
           />
         </div>
         <button type='submit'>

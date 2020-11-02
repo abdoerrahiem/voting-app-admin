@@ -1,4 +1,4 @@
-.login {
+/* .login {
   width: 100vw;
   height: 100vh;
   background: #ff7717;
@@ -59,4 +59,77 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #fff;
+} */
+
+.login {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5;
+  z-index: 2;
+}
+
+.login form {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  position: relative;
+  min-height: 200px;
+  width: 300px;
+}
+
+.login input,
+.login button {
+  font-family: 'Quicksand', sans-serif;
+  outline: none;
+}
+
+.login input {
+  border: none;
+  border-bottom: 1px solid #b4becb;
+  color: #047aed;
+  font-size: 16px;
+  width: 100%;
+}
+
+.login input:hover,
+.login input:focus {
+  border-bottom: 1px solid #047aed;
+}
+
+.login form div > i {
+  color: #b3adad;
+  margin-right: 5px;
+  color: #047aed;
+}
+
+.login button {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-color: #047aed;
+  margin-top: 0.5rem;
+}
+
+.login button:hover {
+  transform: scale(0.98);
+}
+
+.login h3 {
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.login form > div {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

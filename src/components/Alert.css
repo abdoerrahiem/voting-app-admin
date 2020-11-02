@@ -2,10 +2,8 @@
   color: #fff;
   padding: 1rem;
   border-radius: 2px !important;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin: 1rem 0;
+  position: relative;
 }
 
 .alert.error {
@@ -18,4 +16,12 @@
 
 .alert > i {
   cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.alert p,
+.alert i {
+  font-size: 14px;
 }
